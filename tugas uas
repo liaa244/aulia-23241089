@@ -1,0 +1,22 @@
+# Meminta jumlah angka yang akan dimasukkan pengguna
+n = int(input("Masukkan jumlah angka: "))
+
+# Inisialisasi penghitung angka genap dan ganjil
+count_genap = 0
+count_ganjil = 0
+
+# Perulangan untuk meminta input angka dari pengguna
+for i in range(n):
+    angka = int(input(f"Masukkan angka ke-{i+1}: "))
+    
+    # Percabangan untuk menentukan apakah angka genap atau ganjil
+    if angka % 2 == 0:
+        print(f"{angka} adalah angka genap.")
+        count_genap += 1
+    else:
+        print(f"{angka} adalah angka ganjil.")
+        count_ganjil += 1
+
+# Menampilkan hasil akhir jumlah angka genap dan ganjil
+print(f"Jumlah angka genap: {count_genap}")
+print(f"Jumlah angka ganjil: {count_ganjil}")
